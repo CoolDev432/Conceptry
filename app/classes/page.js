@@ -106,7 +106,7 @@ export default function ClassesPage() {
             onChange={(e) => setCreateForm({ ...createForm, passcode: e.target.value })}
             className="w-full mb-3 px-4 py-2 rounded bg-gray-800 text-white border border-gray-700"
           />
-          <Button className="w-full bg-blue-600 hover:bg-blue-700" onClick={handleCreateClass}>
+          <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer" onClick={handleCreateClass}>
             Create
           </Button>
         </div>
@@ -128,7 +128,7 @@ export default function ClassesPage() {
             onChange={(e) => setJoinForm({ ...joinForm, passcode: e.target.value })}
             className="w-full mb-3 px-4 py-2 rounded bg-gray-800 text-white border border-gray-700"
           />
-          <Button className="w-full bg-green-600 hover:bg-green-700" onClick={handleJoinClass}>
+          <Button className="w-full bg-green-600 hover:bg-green-700 text-white cursor-pointer" onClick={handleJoinClass}>
             Join
           </Button>
         </div>
@@ -141,7 +141,7 @@ export default function ClassesPage() {
             <h3 className="text-lg text-black font-bold mb-2">{cls.name}</h3>
             <p className="text-sm text-gray-700 mb-4">👨‍🏫 {cls.teacherName || cls.teacher}</p>
             <Button
-              className="bg-purple-600 hover:bg-purple-700 text-white"
+              className="bg-purple-600 hover:bg-purple-700 hover:scale-109 text-white cursor-pointer "
               onClick={() => router.push(`/classroom?id=${cls.classId}&role=${cls.role}`)}
             >
               Enter as {cls.role}

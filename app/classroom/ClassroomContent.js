@@ -305,7 +305,7 @@ export default function ClassroomContent() {
                   />
                   <button
                     onClick={postHomework}
-                    className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white font-medium"
+                    className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white font-medium cursor-pointer"
                   >
                     Post Homework
                   </button>
