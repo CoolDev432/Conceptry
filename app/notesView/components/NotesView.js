@@ -148,19 +148,19 @@ const NotesView = () => {
   return (
     <div className='p-2 min-h-screen bg-gray-900 text-white'>
       <div className="flex justify-end md:p-2 p-10 flex-wrap md:flex-row flex-col">
-        <button onClick={screenShot} disabled={loading || !currentNoteData?.flowchart} className="p-4 rounded-full flex gap-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 cursor-pointer">
+        <button onClick={screenShot} disabled={loading || !currentNoteData?.flowchart} className="p-4 rounded-full flex gap-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 cursor-pointer mt-3">
           <Download /> <h1>Download Flowchart</h1>
         </button>
 
-        <button onClick={shareNote} className='bg-purple-500 flex gap-2 p-4 ml-2 rounded-full hover:bg-purple-700 cursor-pointer'>
+        <button onClick={shareNote} className='bg-purple-500 flex gap-2 p-4 ml-2 rounded-full hover:bg-purple-700 cursor-pointer mt-3'>
           <ShareIcon /> <h1>Share Note</h1>
         </button>
 
-        <button onClick={() => setIsEditPopupOpen(true)} className='bg-red-500 flex gap-2 p-4 ml-2 rounded-full hover:bg-red-700 cursor-pointer'>
+        <button onClick={() => setIsEditPopupOpen(true)} className='bg-red-500 flex gap-2 p-4 ml-2 rounded-full hover:bg-red-700 cursor-pointer mt-3'>
           <Edit /> <h1>Edit Note</h1>
         </button>
 
-        <button onClick={redirect} className='bg-orange-500 flex gap-2 p-4 ml-2 rounded-full hover:bg-orange-700 cursor-pointer'>
+        <button onClick={redirect} className='bg-orange-500 flex gap-2 p-4 ml-2 rounded-full hover:bg-orange-700 cursor-pointer mt-3'>
           <CheckCheck /> <h1>Quiz</h1>
         </button>
       </div>
